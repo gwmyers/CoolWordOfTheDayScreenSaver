@@ -10,7 +10,7 @@ class CoolWordOfTheDayView: ScreenSaverView
 {
   // MARK: - Members
   private var displayString = "Eat prey, bruh"
-  private var fontAttributes = [NSAttributedString.Key.font: NSFont(name: "Helvetica Bold", size: 48.0),
+  private var fontAttributes = [NSAttributedString.Key.font: NSFont(name: "Helvetica Bold", size: 64.0),
                                 NSAttributedString.Key.foregroundColor: NSColor.white]
   private var displayTextRect = NSRect(x: 800, y: 700, width: 1000, height: 200)
 
@@ -33,13 +33,20 @@ class CoolWordOfTheDayView: ScreenSaverView
   {
     super.draw(rect)
     drawBackground()
+    
+    let textRefreshCounter = Int.random(in: 1..<200)
+    if textRefreshCounter % 79 == 1
+    {
+      let offset = (Int.random(in: 0..<2) * (-1)) + textRefreshCounter
+      
+      displayTextRect = NSRect(x: 800+offset, y: 700+offset, width: 1000, height: 200)
+    }
     drawText()
   }
 
   override func animateOneFrame()
   {
     super.animateOneFrame()
-    
     setNeedsDisplay(bounds)
   }
   
@@ -48,7 +55,7 @@ class CoolWordOfTheDayView: ScreenSaverView
     super.stopAnimation()
   }
   
-  // MARK: - Private
+  // MARK: - PrivateMethods
   
   private func drawBackground()
   {
@@ -59,6 +66,6 @@ class CoolWordOfTheDayView: ScreenSaverView
   
   private func drawText()
   {
-    displayString.draw(in: displayTextRect, withAttributes: fontAttributes)
+    displayString.draw(in: displayTextRect, withAttributes: fontAttributes as [NSAttributedString.Key : Any])
   }
 }
