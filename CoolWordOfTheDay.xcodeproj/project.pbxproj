@@ -7,15 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		37657F74257D69F60005CD96 /* CoolWordOfTheDayView.h in Headers */ = {isa = PBXBuildFile; fileRef = 37657F73257D69F60005CD96 /* CoolWordOfTheDayView.h */; };
-		37657F76257D69F60005CD96 /* CoolWordOfTheDayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 37657F75257D69F60005CD96 /* CoolWordOfTheDayView.m */; };
+		37657F80257D6A5B0005CD96 /* CoolWordOfTheDayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37657F7F257D6A5B0005CD96 /* CoolWordOfTheDayView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		37657F70257D69F60005CD96 /* CoolWordOfTheDay.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoolWordOfTheDay.saver; sourceTree = BUILT_PRODUCTS_DIR; };
-		37657F73257D69F60005CD96 /* CoolWordOfTheDayView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoolWordOfTheDayView.h; sourceTree = "<group>"; };
-		37657F75257D69F60005CD96 /* CoolWordOfTheDayView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoolWordOfTheDayView.m; sourceTree = "<group>"; };
 		37657F77257D69F60005CD96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		37657F7F257D6A5B0005CD96 /* CoolWordOfTheDayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoolWordOfTheDayView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,8 +46,7 @@
 		37657F72257D69F60005CD96 /* CoolWordOfTheDay */ = {
 			isa = PBXGroup;
 			children = (
-				37657F73257D69F60005CD96 /* CoolWordOfTheDayView.h */,
-				37657F75257D69F60005CD96 /* CoolWordOfTheDayView.m */,
+				37657F7F257D6A5B0005CD96 /* CoolWordOfTheDayView.swift */,
 				37657F77257D69F60005CD96 /* Info.plist */,
 			);
 			path = CoolWordOfTheDay;
@@ -62,7 +59,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				37657F74257D69F60005CD96 /* CoolWordOfTheDayView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,6 +93,7 @@
 				TargetAttributes = {
 					37657F6F257D69F60005CD96 = {
 						CreatedOnToolsVersion = 12.2;
+						LastSwiftMigration = 1220;
 					};
 				};
 			};
@@ -133,7 +130,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				37657F76257D69F60005CD96 /* CoolWordOfTheDayView.m in Sources */,
+				37657F80257D6A5B0005CD96 /* CoolWordOfTheDayView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,13 +251,21 @@
 		37657F7B257D69F60005CD96 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = V68AB3398E;
 				INFOPLIST_FILE = CoolWordOfTheDay/Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = gwmyers.CoolWordOfTheDay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				WRAPPER_EXTENSION = saver;
 			};
 			name = Debug;
@@ -268,13 +273,20 @@
 		37657F7C257D69F60005CD96 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = V68AB3398E;
 				INFOPLIST_FILE = CoolWordOfTheDay/Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = gwmyers.CoolWordOfTheDay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
 				WRAPPER_EXTENSION = saver;
 			};
 			name = Release;

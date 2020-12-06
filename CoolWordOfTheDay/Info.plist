@@ -19,6 +19,6 @@
 	<key>CFBundleVersion</key>
 	<string>1</string>
 	<key>NSPrincipalClass</key>
-	<string>CoolWordOfTheDayView</string>
+	<string>CoolWordOfTheDay.CoolWordOfTheDayView</string>
 </dict>
 </plist>
