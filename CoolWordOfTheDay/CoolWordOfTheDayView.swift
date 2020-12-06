@@ -11,7 +11,7 @@ class CoolWordOfTheDayView: ScreenSaverView
   // MARK: - Members
   private var displayString = "Eat prey, bruh"
   private var fontAttributes = [NSAttributedString.Key.font: NSFont(name: "Helvetica Bold", size: 64.0),
-                                NSAttributedString.Key.foregroundColor: NSColor.white]
+                                NSAttributedString.Key.foregroundColor: NSColor.gray]
   private var displayTextRect = NSRect(x: 800, y: 700, width: 1000, height: 200)
 
   // MARK: - Initialization
@@ -34,7 +34,7 @@ class CoolWordOfTheDayView: ScreenSaverView
     super.draw(rect)
     drawBackground()
     
-    let textRefreshCounter = Int.random(in: 1..<200)
+    let textRefreshCounter = Int.random(in: 1..<1000)
     if textRefreshCounter % 79 == 1
     {
       let offset = (Int.random(in: 0..<2) * (-1)) + textRefreshCounter
