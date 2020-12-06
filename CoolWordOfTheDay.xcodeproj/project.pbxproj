@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		37657F80257D6A5B0005CD96 /* CoolWordOfTheDayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37657F7F257D6A5B0005CD96 /* CoolWordOfTheDayView.swift */; };
+		37657F84257D93460005CD96 /* CoolWordOfTheDayAssets in Resources */ = {isa = PBXBuildFile; fileRef = 37657F83257D93460005CD96 /* CoolWordOfTheDayAssets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		37657F70257D69F60005CD96 /* CoolWordOfTheDay.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoolWordOfTheDay.saver; sourceTree = BUILT_PRODUCTS_DIR; };
 		37657F77257D69F60005CD96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		37657F7F257D6A5B0005CD96 /* CoolWordOfTheDayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoolWordOfTheDayView.swift; sourceTree = "<group>"; };
+		37657F83257D93460005CD96 /* CoolWordOfTheDayAssets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = CoolWordOfTheDayAssets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,6 +32,7 @@
 		37657F66257D69F60005CD96 = {
 			isa = PBXGroup;
 			children = (
+				37657F83257D93460005CD96 /* CoolWordOfTheDayAssets */,
 				37657F72257D69F60005CD96 /* CoolWordOfTheDay */,
 				37657F71257D69F60005CD96 /* Products */,
 			);
@@ -120,6 +123,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37657F84257D93460005CD96 /* CoolWordOfTheDayAssets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
